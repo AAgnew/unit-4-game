@@ -12,40 +12,62 @@
 
 <body>
 
-        <div class="container">
-            <div>
-                    <h1 class="display-4">Crystal Collector Game</h1>
-                    <p class="lead">Through the years as we struggle with main and with might</p>
-                    <hr class="my-4">
-                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Start the Game</a>
+    <div class="container">
+        <div>
+            <h1 class="display-4">Crystal Collector Game</h1>
+            <p class="lead">Here's how you play the game:</p>
+            <hr class="my-4">
+            <p class="Instructions" id="stepone"> Click the start button below and you will be given a random number. You will also find four crystals on the page.
+                By clicking on a crystal, you will add a specific amount to your total score.
+            </p>
+            <p class="Instructions" id="steptwo">
+                You win the game by matching your total score to the random number. You lose the game if your total score goes above the
+                random number.
+            </p>
+
+            <p class="Instructions" id="stepthree"></p>
+            The value of each crystal will be hidden from you until you click it. The game will change the value of each crystal each
+            time you start it. Good luck!
+            </p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Start the Game</a>
+            <br> 
+        </p>
+        </div>
+
+        <div>
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <img src="assets/images/diamond1.png"> </div>
+                    <div class="col">
+                        <img src="assets/images/diamond2.png">
+                    </div>
+                    <div class="col">
+                        <img src="assets/images/diamond3.png">
+                    </div>
+                    <div class="col">
+                        <img src="assets/images/diamond4.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+
+                <div class="row">
+                    <div class="col-4">
+
+                        <ul>
+                            <li>Wins:</li>
+                            <li>Losses:</li>
+                        </ul>
+                    </div>
+                    <div class="col-4"> Your random number is: </div>
+                    <div class="col-4">Your total score is: score # </div>
+                </div>
             </div>
 
-            <div class="container">
-                    <div class="row">
-                      <div class="col">
-                        <!-- Content here -->
 
-                        Instructions on Left
-                      </div>
-                      <div class="col">
-                         <!-- Content here -->
-                         Alerts
-                         Wins:
-                         Losses:
-                      </div>
-                      <!--This is where the Crystals will go-->
-                      <div class="row">
-                            <div class="col">crystal 1 </div>
-                            <div class="col">crystal 2</div>
-                            <div class="col">crystal 3</div>
-                            <div class="col">crystal 4</div>
-                          </div>
-               
-                          <div class="row">
-                                <div class="col-8">Your total score is:</div>
-                                <div class="col-4">score # </div>
-                              </div>
+
+        </div>
 
 
 
@@ -63,9 +85,8 @@
 
 
 
-
-                <!--This is where the container div closes-->
-              </div>
+        <!--This is where the container div closes-->
+    </div>
 
 
 
