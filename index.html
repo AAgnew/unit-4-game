@@ -8,6 +8,9 @@
     <title>Crystal Collector Game</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+       
 </head>
 
 <body>
@@ -29,7 +32,7 @@
             The value of each crystal will be hidden from you until you click it. The game will change the value of each crystal each
             time you start it. Good luck!
             </p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Start the Game</a>
+            <p><a class="btn btn-primary btn-lg" id="generateNumber" href="#" role="button">Start the Game</a>
             <br> 
         </p>
         </div>
@@ -37,15 +40,15 @@
         <div>
             <div class="col">
                 <div class="row">
-                    <div class="col">
-                        <img src="assets/images/diamond1.png"> </div>
-                    <div class="col">
+                    <div class="col crystal-image" id="diamond1">
+                        <img src ="assets/images/diamond1.png"> </div>
+                    <div class="col crystal-image" id="diamond2">
                         <img src="assets/images/diamond2.png">
                     </div>
-                    <div class="col">
+                    <div class="col crystal-image" id="diamond3">
                         <img src="assets/images/diamond3.png">
                     </div>
-                    <div class="col">
+                    <div class="col crystal-image" id="diamond4">
                         <img src="assets/images/diamond4.png">
                     </div>
                 </div>
@@ -56,12 +59,12 @@
                     <div class="col-4">
 
                         <ul>
-                            <li>Wins:</li>
-                            <li>Losses:</li>
+                            <li> Wins: <span id="wins">0</span></li>
+                            <li> Losses: <span id="losses">0</span></li>
                         </ul>
                     </div>
-                    <div class="col-4"> Your random number is: </div>
-                    <div class="col-4">Your total score is: score # </div>
+                    <div class="col-4">Your random number is:<span id="yourRandomNumber">  </span> </div>
+                    <div class="col-4">Your total score is:  <span id="totalScore">  </span></div>
                 </div>
             </div>
 
@@ -105,8 +108,8 @@
 
 
     <!-- End of page - Insert Script here for Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
