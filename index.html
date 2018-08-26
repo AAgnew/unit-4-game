@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Collector Game</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-        <link rel="stylesheet" type="test/css" src="assets/css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:700" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <link rel="stylesheet" type="test/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-       
+
 </head>
 
 <body>
 
-    <div class="container">
-        <div>
-            <h1 class="display-4" id"gameName">
-                <p id="thegameName">Crystal Collector Game</p></h1>
+    <div class="container" id="wholepage">
+        <div class="opener">
+            <h1 class="display-4" id "gameName">
+                <p id="thegameName">Crystal Collector Game</p>
+            </h1>
             <p class="lead">Here's how you play the game:</p>
             <hr class="my-4">
             <p class="Instructions" id="stepone"> Click the start button below and you will be given a random number. You will also find four crystals on the page.
@@ -35,16 +36,17 @@
             The value of each crystal will be hidden from you until you click it. The game will change the value of each crystal each
             time you start it. Good luck!
             </p>
-            <p><a class="btn btn-primary btn-lg" id="generateNumber" href="#" role="button">Start the Game</a>
-            <br> 
-        </p>
+            <p>
+                <a class="btn btn-primary btn-lg" id="generateNumber" href="#" role="button">Start the Game</a>
+                <br>
+            </p>
         </div>
 
         <div>
             <div class="col">
                 <div class="row">
                     <div class="col crystal-image" id="diamond1">
-                        <img src ="assets/images/diamond1.png"> </div>
+                        <img src="assets/images/diamond1.png"> </div>
                     <div class="col crystal-image" id="diamond2">
                         <img src="assets/images/diamond2.png">
                     </div>
@@ -62,12 +64,20 @@
                     <div class="col-4">
 
                         <ul>
-                            <li> Wins: <span id="wins">0</span></li>
-                            <li> Losses: <span id="losses">0</span></li>
+                            <li> Wins:
+                                <span id="wins">0</span>
+                            </li>
+                            <li> Losses:
+                                <span id="losses">0</span>
+                            </li>
                         </ul>
                     </div>
-                    <div class="col-4">Your random number is:<span id="yourRandomNumber">  </span> </div>
-                    <div class="col-4">Your total score is:  <span id="totalScore">  </span></div>
+                    <div class="col-4">Your random number is:
+                        <span id="yourRandomNumber"> </span>
+                    </div>
+                    <div class="col-4">Your total score is:
+                        <span id="totalScore"> </span>
+                    </div>
                 </div>
             </div>
 
@@ -112,11 +122,11 @@
 
     <!-- End of page - Insert Script here for Bootstrap -->
     <script type="text/javascript" src="assets/javascript/game.js"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script></script>
+        crossorigin="anonymous"></script></script> -->
 </body>
 
 </html>

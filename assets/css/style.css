@@ -1,16 +1,42 @@
+html{
+    font-family: 'Acme', sans-serif!important;
+}
+
+.Instructions{
+    font-family: 'Acme', sans-serif!important;
+}
+
+#stepone{
+    font-family: 'Acme', sans-serif!important;
+}
+.container{
+    font-family: 'Acme', sans-serif!important;
+}
+#wholepage{
+    font-family: 'Acme', sans-serif!important;
+}
 body{
-    font-family: monospace;
+    font-family: 'Acme', sans-serif!important;
+    background-color: orange;
 }
 
 h1 {
-    font-family: monospace;
+    font-family: 'Acme', sans-serif;
     font-size: 8rem;
     font-weight: 300;
     line-height: 1.2;
     
 }
-#theGameName{
-    font-family: monospace;
+#thegameName{
+    font-family: 'Acme', sans-serif;
     font-size: 8rem;
 
+}
+
+.opener{
+    font-family: 'Acme', sans-serif;
+}
+
+#stepthree{
+    font-family: 'Acme', sans-serif!important;
 }
