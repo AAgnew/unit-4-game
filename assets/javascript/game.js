@@ -40,12 +40,20 @@ $(document).ready(function () {
             $("#totalScore").text(userTotal);
 
             if (userTotal === randomNumber) {
-                winner()
+                // winner 
+                wins++;
+
+                $('#wins').text(wins);
+                reset();
             }
 
             else if (userTotal > randomNumber) {
-                loser()
+                // loser
+                losses++;
+                $('#losses').text(losses);
+                reset()
             }
+
         }
     }
 
