@@ -17,6 +17,10 @@ $(document).ready(function () {
 
     $("#wins").text(wins);
     $("#losses").text(losses);
+    function reset(){
+        wins=0;
+        losses=0;
+    }
 
     // Here we use jQuery to select the header with "click-me" as its ID.
     // Notice I have the #click-me, click, and then the function
